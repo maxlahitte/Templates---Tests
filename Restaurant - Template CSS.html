@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: Georgia;}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('img/Restaurant\ -\ fondo.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p class="titulo">Lahitte</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contacto</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">Martes - Jueves 18-00hs | Viernes - Domingos 11-15hs // 19-01hs</p>
+    <p class="w3-large">Eiffel 363, Merlo</p>
+    <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Entradas</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Bastoncitos de Mozzarella <b>$600</b></h5>
+      <h5>Rabas a la Provenzal <b>$1000</b></h5>
+      <h5>Brusquetas Mediterráneas x 4 <b>$650</b></h5>
+      <h5>Papas fritas al Roquefort <b>$560</b></h5>
+      <h5>Batatas fritas a la Mostaza <b>$560</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Platos Principales</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Pechugas de pollo rellenas al Champignon con Batatas fritas <b>$950</b></h5>
+      <h5>Pollo desguesado a la Provenzal con Papas fritas <b>$760</b></h5>
+      <h5>Lomo al Roquefort con Puré  <b>$1100</b></h5>
+      <h5>Bife de Chorizo con Papas fritas a Caballo <b>$1200</b></h5>
+      <h5>Trucha a la Manteca con Papas noisette <b>$1100</b></h5>
+      <h5>Salmón Rosado a la Crema de almendras con Papas noisette <b>$1500</b></h5>
+      <h5>Sorrentinos de Muzzarella, Jamón y Nuez con Salsa parisiene <b>$1120</b></h5>
+      <h5>Ñoquis con Salsa 4 Quesos <b>$820</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Postres</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Panqueques de Dulce de leche con salsa de almendras y chocolate <b>$460</b></h5>
+      <h5>Budín de Pan con Crema, Dulce de leche y Frutillas <b>$490</b></h5>
+      <h5>Volcán de Chocolate con Helado <b>$530</b></h5>
+      <h5>Tiramisú <b>$570</b></h5>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contacto</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reservá una mesa, preguntá por el especial del día </p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Cuántas personas" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Fecha y Horario" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje \ Consulta" required name="Message"></p>
+        <p><button class="w3-button" type="submit">ENVIAR MENSAJE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
